@@ -4,6 +4,7 @@
   export let points;
   let showControls = false;
 
+  // not actually changing App's player.points (just @ display level, ie. Player's points) - this causes the issue where adding a player resets the updated points of current players
   const addPoint = () => points += 1;
   const removePoint = () => points -=1;
   const toggleControls = () => showControls = !showControls;
