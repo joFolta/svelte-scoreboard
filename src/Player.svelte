@@ -1,5 +1,5 @@
 <script>
-// export vars here (opposite to receiving React props from parent)
+  // export vars here (opposite to receiving React props from parent)
   export let name;
   export let points;
   let showControls = false;
