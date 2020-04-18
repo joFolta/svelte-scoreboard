@@ -7,7 +7,7 @@ Instead of using techniques like virtual DOM diffing, Svelte writes code that su
 - Following Traversy Media's tutorial *Svelte Crash Course*: https://www.youtube.com/watch?v=uK2RnIzrQ0M&feature=youtu.be
 - Updates: 
     1) Added data-binding to player points prop, so that points would not reset whenever a new player was added.
-    2) Added unNamedPlayerNamer() function which auto-names a new player with no name input (Player 1, Player 2, Player 3, ...)
+    2) Added `unNamedPlayerNamer()` function which auto-names a new player with no name input (Player 1, Player 2, Player 3, ...)
     3) Improved styling of delete player button
 
 - Recommended VSCode Extension: Svelte
