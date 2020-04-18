@@ -23,19 +23,6 @@
     players = [...players, newPlayer];
   };
 
-// upgrade so you can type in their name
-// upgrade so you can type in their name
-// upgrade so you can type in their name
-  const removeBrock = (e) => {
-    // const expiredPlayer = e.detail;
-    const expiredPlayer = {
-      name: 'Brock',
-      points: 0
-    };
-    players = players.filter(player => 
-      player.name !== expiredPlayer.name
-    );
-  };
   const removePlayer = (e) => {
     const removePlayerName = e.detail;
     players = players.filter(player => 
@@ -46,8 +33,7 @@
 
 <Navbar />
 <div class="container">
-<AddPlayer on:addplayer={addPlayer}/>
-<button class="btn btn-primary" on:click={removeBrock}>REMOVE BROCK</button>
+  <AddPlayer on:addplayer={addPlayer}/>
   {#if players.length === 0}
     <p>No Players</p>
   {:else}

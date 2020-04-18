@@ -14,7 +14,7 @@
   const addPoint = () => points += 1;
   const removePoint = () => points -=1;
   const toggleControls = () => showControls = !showControls;
-  const removePlayer = () => {
+  const onDelete = () => {
     dispatch("removeplayer", name)
   }
 </script>
@@ -26,6 +26,18 @@
   
   h3 {
     margin-bottom: 10px;
+  }
+  
+  .grid-wrapper {
+    display: grid;
+  }
+
+  .btn-right {
+    justify-self: end;
+  }
+
+  .btn-right:hover {
+    color: red;
   }
 </style>
 
@@ -41,6 +53,8 @@
       <button class="btn" on:click={addPoint}>+1</button>
       <button class="btn btn-dark" on:click={removePoint}>-1</button>
       <input type="number" bind:value={points}>
-      <button on:click={removePlayer}>Delete</button>
+      <div class="grid-wrapper">
+        <button class="btn-right" on:click={onDelete}>Delete</button>
+      </div>
     {/if}
   </div>
