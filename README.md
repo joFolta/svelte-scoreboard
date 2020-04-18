@@ -1,9 +1,16 @@
+![Preview](public/img/preview.png)
+
 # svelte-scoreboard
 "Svelte is a radical new approach to building user interfaces. Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app.
 
 Instead of using techniques like virtual DOM diffing, Svelte writes code that surgically updates the DOM when the state of your app changes." - from https://svelte.dev/
 - Following Traversy Media's tutorial *Svelte Crash Course*: https://www.youtube.com/watch?v=uK2RnIzrQ0M&feature=youtu.be
-- Recommended: VSCode Extension - Svelte
+- Updates: 
+    1) Added data-binding to player points prop, so that points would not reset whenever a new player was added.
+    2) Added unNamedPlayerNamer() function which auto-names a new player with no name input (Player 1, Player 2, Player 3, ...)
+    3) Improved styling of delete player button
+
+- Recommended VSCode Extension: Svelte
 
 ---
 ---
