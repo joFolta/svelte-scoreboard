@@ -31,7 +31,7 @@
     <p>No Players</p>
   {:else}
     {#each players as player}
-      <Player name={player.name} points={player.points} />
+      <Player name={player.name} bind:points={player.points} />
     {/each}
   {/if}
 </div>
