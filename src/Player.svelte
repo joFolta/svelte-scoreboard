@@ -1,4 +1,7 @@
 <script>
+  import { createEventDispatcher } from 'svelte';
+  const dispatch = createEventDispatcher();
+
   // Declaring the props received from parent here. See https://svelte.dev/examples#declaring-props
   export let name;
   export let points;
@@ -11,6 +14,9 @@
   const addPoint = () => points += 1;
   const removePoint = () => points -=1;
   const toggleControls = () => showControls = !showControls;
+  const removePlayer = () => {
+    dispatch("removeplayer", name)
+  }
 </script>
 
 <style>
@@ -35,5 +41,6 @@
       <button class="btn" on:click={addPoint}>+1</button>
       <button class="btn btn-dark" on:click={removePoint}>-1</button>
       <input type="number" bind:value={points}>
+      <button on:click={removePlayer}>Delete</button>
     {/if}
   </div>
